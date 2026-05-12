@@ -1,6 +1,23 @@
 <h1>Hello Ketan</h1>
-<p>My name is {{ name }}</p>
+<!-- <p>My name is {{ name }}</p>
 <p>My user name is {{ userName }}</p>
 <p>My user id is {{ userId }}</p> 
 <p>Am I married=  {{ isMarried }}</p>
-<p>Am I alive ?=  {{ isAlive }}</p>
+<p>Am I alive ?=  {{ isAlive }}</p> -->
+
+<!-- click event -->
+<button (click)="handleClick()">Click Me</button>
+
+
+<!-- input event -->
+ <input (input)="handleInput($event)" placeholder="type something">
+<!-- key up event -->
+ <input (keyup)="handleKeyUp($event)" placeholder="type something">
+
+ <!-- mouse hover event and mouse leave event -->
+
+ <div (mouseover)="handleMouseHover()" (mouseleave)="handleMouseLeave()" class="mouse-hover">Mouse Hover</div>
+
+
+ <!-- blur event -->
+ <input (blur)="handleBlur()" (focus)="handleFocus()" placeholder="type something and then click outside">
