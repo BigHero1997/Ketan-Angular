@@ -1,0 +1,36 @@
+<p>events works!</p>
+
+<button (click) = "increment()">click me</button>
+<p>count : {{ count }}</p>
+
+<!-- $event is a special keyword which is used to send the event object to the function which is being called on click event. -->
+<button (click)="showEvent($event)">show event </button>
+
+<input (input)="updateName($event.target.value)">
+<p>Username: {{ userName }}</p>
+
+<!-- What this does
+<input (input)="updateName($event.target.value)"> is an Angular event binding.
+
+(input) listens for the browser input event on that <input> field.
+When the user types, Angular calls the component method updateName(...).
+$event is the native DOM event object.
+$event.target.value reads the current text inside the input.
+So it means:
+
+every time the input text changes,
+Angular passes the current value to updateName,
+and the component can update userName or other state. -->
+
+
+
+
+<button (click) = "incrementSignal()">click me (signal)</button>
+<p>signal count : {{ signalCount() }}</p>
+
+<form (submit)="handleSubmit($event)">
+
+    <input placeholder="email">
+    <button>Submit </button>
+
+</form>
