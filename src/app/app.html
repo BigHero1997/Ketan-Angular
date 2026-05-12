@@ -1,6 +1,19 @@
-<h1>Hello Ketan</h1>
+<!-- <h1>Hello Ketan</h1>
 <p>My name is {{ name }}</p>
 <p>My user name is {{ userName }}</p>
 <p>My user id is {{ userId }}</p> 
 <p>Am I married=  {{ isMarried }}</p>
-<p>Am I alive ?=  {{ isAlive }}</p>
+<p>Am I alive ?=  {{ isAlive }}</p> -->
+
+
+<input (input)="updateName($event.target.value)" placeholder="Enter Name">
+
+<p>Your Name : {{name}}</p> 
+
+<input (input)="city=$event.target.value" placeholder="Enter city">
+<p>Your city : {{city}}</p>
+
+
+<input #userInput placeholder="Enter email">
+<button (click)="getEmail(userInput.value)">Get Email</button>
+<p>Your email : {{email}}</p>
