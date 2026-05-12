@@ -13,5 +13,13 @@ export class App {
   userName = 'Ketan';
   userId = 12345;
   isMarried = true;
-  isAlive = true;
+  isAlive = false;
+  work = "Engineer";
+
+  titleData = signal('angular-tutorial-worked');
+
+
+  getUser() {
+    return "Ketan";
+  }
 }
