@@ -1,0 +1,37 @@
+button {
+  padding: 10px 18px;
+  color: white ;
+  border-radius: 6px;
+  cursor: pointer   ;
+
+}
+
+.button-group {
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+}
+
+.add-btn{
+    background: green;
+}
+
+.sub-btn{
+    background: rgb(119, 39, 39);
+}   
+
+.reset-btn{
+    background: gray;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.count-number {
+    font-size: 55px;
+    margin-top: 20px;
+    text-align: center;
+}
