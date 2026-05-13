@@ -1,6 +1,31 @@
-<h1>Hello Ketan</h1>
+<!-- <h1>Hello Ketan</h1>
 <p>My name is {{ name }}</p>
 <p>My user name is {{ userName }}</p>
 <p>My user id is {{ userId }}</p> 
 <p>Am I married=  {{ isMarried }}</p>
-<p>Am I alive ?=  {{ isAlive }}</p>
+<p>Am I alive ?=  {{ isAlive }}</p> -->
+
+
+<!-- <h2>Signal Example</h2>
+<p>value : {{value}} </p>
+
+<p>signal value : {{count()}}</p>
+
+<button (click)="count.set(50)">Change Signal</button> -->
+<!-- 
+<h1>Count: {{ count() }}</h1>
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>
+<button (click)="reset()">Reset</button> -->
+
+<h1>Count: {{ count() }}</h1>
+<h2>user: {{ user().name }}</h2>
+<h2>Numbers : {{numbers()[1]}}</h2>
+<h3>phonedata : {{ phoneData().brand }} {{ phoneData().model }}</h3>
+
+
+<h2>numbers : {{numbers()}}</h2>
+
+<button (click)="directUpdate()">Direct Update</button>
+
+<button (click)="addNumber()">Add Number</button>
