@@ -1,6 +1,52 @@
-<h1>Hello Ketan</h1>
+<!-- <h1>Hello Ketan</h1>
 <p>My name is {{ name }}</p>
 <p>My user name is {{ userName }}</p>
 <p>My user id is {{ userId }}</p> 
 <p>Am I married=  {{ isMarried }}</p>
-<p>Am I alive ?=  {{ isAlive }}</p>
+<p>Am I alive ?=  {{ isAlive }}</p> -->
+<!-- 
+@if (isAlive) {
+    <h1>Hi Ketan</h1>
+} @else {
+    <h1>Bye Ketan</h1>
+} -->
+
+
+<!-- @if (marks>=75) {
+    <h1>congrats, >75</h1>
+}@else if (marks>=60) {
+    <h1>congrats, >60</h1>
+}@else if (marks>=35) {
+    <h1>congrats, >35</h1>
+}@else {
+    <h1>Sorry, you have failed</h1>
+} -->
+
+<!-- <button (click)="toggleBox()">Toggle</button>
+
+@if (showBox) {
+    <h1>Box is visible</h1>
+} @else {
+    <h1>Box is hidden</h1>
+} -->
+
+
+<!-- <input (input)="updateAge($event.target.value)" placeholder="enter age">
+
+@if (age>18) {
+    <h1>adult</h1>
+} @else {
+    <h1>minor</h1>   
+} -->
+
+
+<button (click)="section='home'">Home</button>
+<button (click)="section='profile'">profile</button>
+
+@if (section=='home') {
+    <h1>Welcome to Home Page</h1>
+} @else if (section=='profile') {
+    <h1>Welcome to Profile Page</h1>
+} @else {
+    <h1>Page not found</h1>
+}
