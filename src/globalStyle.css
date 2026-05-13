@@ -1,0 +1,8 @@
+ .text-center {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #d93030;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
