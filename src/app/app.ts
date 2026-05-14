@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+// import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -9,4 +10,23 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
  
+  // userName = 'Ketan';
+
+//name = signal('Kajal');
+
+
+  user = signal<{ name: string; age: number }>({ name: 'Ketan', age: 30 });
+
+
+
+  updateName(value: string) {
+    this.user.update(user => ({ ...user, name: value }));
+
+  }
+
+  updateAge(value : number) {
+    this.user.update(user => ({ ...user, age: value }));
+  } 
+
+
 }

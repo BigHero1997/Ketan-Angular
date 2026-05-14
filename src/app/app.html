@@ -1,1 +1,19 @@
 <h1>Hello Ketan</h1>
+
+
+<!-- <input [(ngModel)]="userName" placeholder="Enter your name"> -->
+
+<!-- <input [value]="name()" (input)="name.set($event.target.value)" placeholder="Enter Name">
+<p>Hello, {{ name() }}!</p> -->
+
+
+
+<input [value]="user().name" (input)="updateName($event.target.value)" placeholder="Enter Name"><br>
+
+<p>Updated Name :  {{ user().name }}!</p>
+
+<hr>
+
+<input [value]="user().age" (input)="updateAge(+$event.target.value)" placeholder="Enter Age"><br>
+
+<p>Updated age :  {{ user().age }}!</p>
