@@ -1,1 +1,29 @@
-<h1>Hello Ketan</h1>
+<!-- <h1>Hello {{uName}}</h1>
+
+<h2>{{lname | uppercase}}</h2>
+<h2>{{uName | lowercase}}</h2>
+
+
+<p>short date : {{today | date:'short'}}</p>
+<p>full date : {{today | date:'full'}}</p>
+<p>full date : {{today | date:'fullDate'}}</p>
+
+<p>custom date : {{today | date:'dd/MM/yyyy'}}</p>
+
+
+<p>INR : {{amount | currency : 'INR' }}</p>
+<p>USD : {{amount | currency : 'USD' }}</p>
+<p>EUR : {{amount | currency : 'EUR' }}</p>
+<p>custom currency : {{amount | currency : 'EUR':'symbol':'1.0-0' }}</p>
+
+
+<p>Percentage : {{per | percent}}</p>
+
+<p>{{user | json}}</p> -->
+
+
+
+<h1>{{fullName | pipeShortName}}</h1>
+
+<p>{{usd | currency}}</p>
+<p>{{usd | pipeCurrencyConvert : usdToINR | currency : 'INR' }}</p>
